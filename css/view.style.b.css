@@ -1,0 +1,100 @@
+body {
+	min-width: 680px;
+	background-image: url("https://dl.dropboxusercontent.com/s/dcadftwjlhg0wed/table_background.jpg?dl=0");
+	background-size: cover;
+	background-position: center;
+	padding-top: 5%;
+}
+
+.book {
+	position: relative;
+	padding: 0;
+}
+
+#flipcontent {
+	position: absolute;
+}
+
+#placeholder {
+	position: absolute;
+	background-color: ghostwhite;
+}
+
+#pages .turn-page {
+	background-color: ghostwhite;
+	background-image: url("https://dl.dropboxusercontent.com/s/oh5bf07zgkkj843/paper_texture.jpg?dl=0");
+	background-size: cover;
+}
+
+.quote-content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1em 2em 2em 2em;
+	font-family: "Kaushan Script";
+	color: #32538c;
+}
+
+.quote-content blockquote {
+	border-left: none;
+}
+
+.quote-content blockquote > footer {
+	color: #5d7194;
+}
+
+.quote-content .share-links {
+	margin-top: 1em;
+}
+
+.quote-content .share-links a {
+	outline: 0;
+}
+
+.quote-content .share-links a > i {
+	font-family: "Engagement";
+	font-size: 1.2em;
+	margin-left: 0.3em;
+}
+
+.flip-control {
+	height: 6em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.flip-control .fa {
+	color: ghostwhite;
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+.flip-control span.fa {
+	font-size: 4em;
+}
+
+.flip-control .fa-stack {
+	font-size: 1.8em;
+}
+
+.flip-control .fa:hover,
+.flip-control .fa-stack:hover .fa {
+	color: lightgoldenrodyellow;
+}
+
+.flip-control span.fa:hover {
+	font-size: 4.5em;
+}
+
+.flip-control .fa-stack:hover {
+	font-size: 2em;
+}
+
+#prev-button.unactive .fa {
+	color: rgba(200, 200, 200, 0.8);
+	text-shadow: 3px 3px 3px rgba(100, 100, 100, 0.4);
+}
